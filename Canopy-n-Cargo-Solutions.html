@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canopy & Cargo Solutions | Armor Expert 4x4</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#0f0f0f;color:#fff}
+a{text-decoration:none;color:inherit}
+header{background:#000;padding:20px;text-align:center}
+header img{max-width:800px;width:100%}
+.page-title{text-align:center;padding:50px 20px}
+.block{max-width:1200px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.block img{width:100%;border-radius:10px}
+.reverse{direction:rtl}
+.reverse>*{direction:ltr}
+.showcase{max-width:1200px;margin:60px auto;padding:0 20px}
+.showcase img{width:100%;margin-bottom:20px;border-radius:10px}
+footer{background:#000;padding:20px;text-align:center;color:#888}
+@media(max-width:768px){.block{grid-template-columns:1fr}}
+  /* ---------- IMAGE CAROUSEL ---------- */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  border-radius: 10px;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+.block .carousel {
+  height: 350px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="index.html"><img src="AE 4x4 logo.png"></a>
+</header>
+
+<section class="page-title">
+<h1>Canopy & Cargo Solutions</h1>
+<p>Roller shutters, deck covers, tray setups, drawer system, softlids.</p>
+</section>
+
+<section class="block">
+<div class="carousel">
+  <img src="canopy1.JPG" class="active">
+  <img src="canopy2.jpg">
+  <img src="canopy3.JPG">
+  <img src="canopy4.JPG">
+  <img src="canopy5.JPG">
+</div>
+<div>
+<h2>Canopy</h2>
+<p>Maximize your storage and security. Our high-quality canopies turn your truck bed into a fully enclosed, weather-protected cargo space. Built for durability and a seamless fit, they provide the ultimate protection for your tools and camping gear while giving your vehicle a powerful, integrated look.</p>
+</div>
+</section>
+
+<section class="block reverse">
+<div class="carousel">
+  <img src="softlid1.JPG" class="active">
+  <img src="softlid2.jpg">
+  <img src="softlid3.jpg">
+  <img src="softlid4.JPG">
+  <img src="softlid5.JPG">
+</div>
+<div>
+<h2>Softlid</h2>
+<p>Lightweight protection with a sleek finish. For those who want a clean look without the bulk, our soft lid covers offer a practical and affordable solution. These durable, UV-resistant covers keep your cargo out of sight and protected from the elements, all while being easy to roll back or remove whenever you need full bed access.</p>
+</div>
+</section>
+
+  <section class="page-title">
+<h1>Canopy & Cargo Solutions</h1>
+<p>Roller shutters, deck covers, tray setups, drawer system, softlids.</p>
+</section>
+
+<section class="block">
+<div class="carousel">
+  <img src="canopy1.JPG" class="active">
+  <img src="canopy2.jpg">
+  <img src="canopy3.JPG">
+  <img src="canopy4.JPG">
+  <img src="canopy5.JPG">
+</div>
+<div>
+<h2>Roller Shutter</h2>
+<p>The perfect blend of security and versatility. Available in both manual and electric models, our roller shutters offer a solid, lockable armor for your truck bed. The retractable design allows you to carry tall items easily, while the interlocking aluminum slats provide heavy-duty security and excellent weather resistance for your valuables.</p>
+</div>
+</section>
+
+<section class="block reverse">
+<div class="carousel">
+  <img src="softlid1.JPG" class="active">
+  <img src="softlid2.jpg">
+  <img src="softlid3.jpg">
+  <img src="softlid4.JPG">
+  <img src="softlid5.JPG">
+</div>
+<div>
+<h2>Canvas</h2>
+<p>Rugged, flexible, and built for work. Our canvas tonneau covers are designed for the serious adventurer or tradesman who needs high-capacity storage. Made from heavy-duty, waterproof material, they provide a flexible cargo area that can adapt to oversized loads while ensuring everything stays dry and secure on the road.</p>
+</div>
+</section>
+
+<!--
+<section class="showcase">
+<img src="images/showcase1.jpg">
+<img src="images/showcase2.jpg">
+</section>
+-->
+ <br>
+  <a href="index.html">← Back to Home</a>
+  
+<footer>© 2026 ARMOR EXPERT 4x4. All rights reserved.</footer>
+
+<script>
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const images = carousel.querySelectorAll('img');
+  let index = 0;
+
+  setInterval(() => {
+    images[index].classList.remove('active');
+    index = (index + 1) % images.length;
+    images[index].classList.add('active');
+  }, 3000);
+});
+</script>
+
+  
+</body>
+</html>
