@@ -13,8 +13,13 @@ header img{max-width:800px;width:100%}
 .page-title{text-align:center;padding:50px 20px}
 .block{max-width:1200px;margin:60px auto;padding:0 20px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 .block img{width:100%;border-radius:10px}
-
-/* ---------- IMAGE CAROUSEL ---------- */
+.reverse{direction:rtl}
+.reverse>*{direction:ltr}
+.showcase{max-width:1200px;margin:60px auto;padding:0 20px}
+.showcase img{width:100%;margin-bottom:20px;border-radius:10px}
+footer{background:#000;padding:20px;text-align:center;color:#888}
+@media(max-width:768px){.block{grid-template-columns:1fr}}
+  /* ---------- IMAGE CAROUSEL ---------- */
 .carousel {
   position: relative;
   width: 100%;
@@ -34,13 +39,6 @@ header img{max-width:800px;width:100%}
 .carousel img.active {
   opacity: 1;
 }
- 
-.reverse{direction:rtl}
-.reverse>*{direction:ltr}
-.showcase{max-width:1200px;margin:60px auto;padding:0 20px}
-.showcase img{width:100%;margin-bottom:20px;border-radius:10px}
-footer{background:#000;padding:20px;text-align:center;color:#888}
-@media(max-width:768px){.block{grid-template-columns:1fr}}
 </style>
 </head>
 
@@ -69,12 +67,12 @@ footer{background:#000;padding:20px;text-align:center;color:#888}
 </section>
 
 <section class="block reverse">
-<section class="block">
 <div class="carousel">
   <img src="rbumper1.jpg" class="active">
   <img src="rbumper2.jpg">
   <img src="rbumper3.jpg">
   <img src="rbumper4.jpg">
+</div>
 <div>
 <h2>Rear Steel Bumpers</h2>
 <p>From true protection to stylish appearance, our rear steel bumpers offer a solid shield for your vehicle’s back end. Designed to handle heavy-duty impacts and improve departure angles, these bumpers often include integrated recovery points and tow-bar compatibility. Replace factory plastic with durable steel for ultimate peace of mind on and off the road.</p>
@@ -84,7 +82,7 @@ footer{background:#000;padding:20px;text-align:center;color:#888}
 <section class="block">
 <div class="carousel">
   <img src="sidestep1.JPG" class="active">
-  <img src="sidestep2.HEIC">
+  <img src="sidestep2.jpg">
   <img src="sidestep3.jpg">
   <img src="sidestep4.JPG">
 </div>
@@ -95,12 +93,12 @@ footer{background:#000;padding:20px;text-align:center;color:#888}
 </section>
 
 <section class="block reverse">
-<section class="block">
 <div class="carousel">
   <img src="rbumper1.jpg" class="active">
   <img src="rbumper2.jpg">
   <img src="rbumper3.jpg">
   <img src="rbumper4.jpg">
+</div>
 <div>
 <h2>Strength Meets Function</h2>
 <p>Protection without sacrificing approach angles, clearance and daily usability.</p>
